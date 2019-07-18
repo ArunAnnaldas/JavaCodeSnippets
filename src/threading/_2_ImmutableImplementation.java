@@ -1,4 +1,4 @@
-package Threading;
+package threading;
 
 public class _2_ImmutableImplementation {
 
