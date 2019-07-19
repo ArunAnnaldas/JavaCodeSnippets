@@ -22,6 +22,12 @@ public class _5_ConcurrentHashMap {
 	 * 
 	 * ConcurrentHashMap does not allow null keys or null values
 	 * 
+	 * When to use it???? 
+	 * ConcurrentHashMap is best suited when you have multiple
+	 * readers and few writers. If writers outnumber reader, or writer is equal to
+	 * reader, than performance of ConcurrentHashMap effectively reduces to
+	 * synchronized map or Hashtable.
+	 * 
 	 * @param args
 	 */
 

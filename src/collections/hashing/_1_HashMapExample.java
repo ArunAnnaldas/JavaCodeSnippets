@@ -20,6 +20,40 @@ public class _1_HashMapExample {
 	 * 
 	 * Synchronized HashMap allows one null key.
 	 * 
+	 * When we pass both key and value to put() method to store on HashMap, it uses
+	 * key object hashcode() method to calculate hashcode and then by applying
+	 * hashing on that hashcode it identifies bucket location for storing value
+	 * object.
+	 * 
+	 * 
+	 * 1) How does get(Key key) method works internally in HashMap, and Hashtable in
+	 * Java? Here are steps, which happens, when you call get() method with key
+	 * object to retrieve corresponding value from hash based collection
+	 * 
+	 * a) Key.hashCode() method is used to find the bucket location in backing
+	 * array. (Remember HashMap is backed by array in Java) Though hashcode() is not
+	 * used directly, but they are passed to internal hash() function.
+	 * 
+	 * b) In backing array or better known as the bucket, key and values are stored
+	 * in the form of a nested class called Entry. If there is only one Entry at
+	 * bucket location, then the value from that entry is returned.
+	 * 
+	 * This has also changed from Java 8, where after a threshold is crossed then a
+	 * binary tree is used instead of linked list to lift the worst case performance
+	 * from O(n) to O(logN).
+	 * 
+	 * if we need to retrieve value object in collision situation, following steps will
+	 * be followed :
+	 * 
+	 * 1) Call hashCode() method of the key to finding bucket location.
+	 * 
+	 * 2) Traverse thought linked list, comparing keys in each entries using
+	 * keys.equals() until it returns true.
+	 * 
+	 * So, we use equals() method of a key object to find correct entry and then
+	 * return value from that. Remember key.equals() method, and this is what
+	 * Interviewer want to know
+	 * 
 	 * @param arr
 	 */
 
