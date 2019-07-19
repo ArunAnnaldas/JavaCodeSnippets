@@ -15,6 +15,11 @@ public class _1_HashMapExample {
 	 * value in the HashMap, for faster retrieval of user data corresponding to a
 	 * username.
 	 * 
+	 * HashMap which is non-synchronized by nature can be synchronized by applying a
+	 * wrapper using synchronized Map.
+	 * 
+	 * Synchronized HashMap allows one null key.
+	 * 
 	 * @param arr
 	 */
 
