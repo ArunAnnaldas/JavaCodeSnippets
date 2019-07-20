@@ -14,7 +14,7 @@ public class ArrayListSorting {
 		/* Sorting based on Student Name */
 		System.out.println("Student Name Sorting:");
 		Collections.sort(arraylist, Student.StuNameComparator);
-
+		
 		for (Student str : arraylist) {
 			System.out.println(str);
 		}
