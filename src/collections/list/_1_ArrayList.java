@@ -3,6 +3,7 @@ package collections.list;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.Enumeration;
 import java.util.Iterator;
 
 public class _1_ArrayList {
@@ -61,28 +62,36 @@ public class _1_ArrayList {
 		System.out.println(alist);
 
 		/* For Loop for iterating ArrayList */
-	      System.out.println("For Loop");
-	      for (int counter = 0; counter < alist.size(); counter++) { 		      
-	          System.out.println(alist.get(counter)); 		
-	      }   	
-		
+		System.out.println("For Loop");
+		for (int counter = 0; counter < alist.size(); counter++) {
+			System.out.println(alist.get(counter));
+		}
+
 		// Iterating using Advanced for loop
 		for (String str : alist)
 			System.out.println(str);
-		
+
 		// Iterating using while loop
 		System.out.println("while loop");
 		int count = 0;
-		while(alist.size()>count) {
+		while (alist.size() > count) {
 			System.out.println(alist.get(count));
 			count++;
 		}
-		
-		//Iterating using Iterator
+
+		// Iterating using Iterator
 		Iterator itr = alist.iterator();
-		while(itr.hasNext()) {
+		while (itr.hasNext()) {
 			System.out.println(itr.next());
 		}
+		
+
+		// iterate arraylist elements using Enumeration interface
+		Enumeration<String> e = Collections.enumeration(alist);
+		while(e.hasMoreElements()) {
+			System.out.println(e.nextElement());
+		}
+
 
 	}
 
