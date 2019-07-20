@@ -1,6 +1,19 @@
 package collections.list.arrayList;
 
 import java.util.ArrayList;
+import java.util.Collections;
+
+/**
+ * Sort method on an ArrayList of Objects which actually doesn’t work until
+ * unless we use interfaces like Comparable and Comparator
+ * 
+ * Sort the ArrayList<Student> based on the student Age property. This is how it
+ * can be done – First implement Comparable interface and then Override the
+ * compareTo method.
+ * 
+ * @author aannaldas
+ *
+ */
 
 class Student implements Comparable {
 
@@ -30,7 +43,7 @@ class Student implements Comparable {
 		this.rollno = rollno;
 	}
 
-	public int getStudentage() {
+	public Integer getStudentage() {
 		return studentage;
 	}
 
@@ -42,7 +55,7 @@ class Student implements Comparable {
 	public int compareTo(Object compareStu) {
 		int compareage = ((Student) compareStu).getStudentage();
 		/* For Ascending order */
-		return this.studentage - compareage;
+		return this.getStudentage().compareTo(((Student) compareStu).getStudentage());
 	}
 
 	@Override
@@ -51,22 +64,15 @@ class Student implements Comparable {
 	}
 }
 
-/**
- * Sort method on an ArrayList of Objects which actually doesn’t work until
- * unless we use interfaces like Comparable and Comparator
- * 
- * @author aannaldas
- *
- */
-
 public class ObjectSorting {
 	public static void main(String args[]) {
 		ArrayList<Student> arraylist = new ArrayList<Student>();
 		arraylist.add(new Student(223, "Chaitanya", 26));
+		arraylist.add(new Student(249, "Rahul1", 21));
 		arraylist.add(new Student(245, "Rahul", 24));
 		arraylist.add(new Student(209, "Ajeet", 32));
 
-		// Collections.sort(arraylist); //=> Does not work on Arraylist of custom object
+		Collections.sort(arraylist);
 
 		for (Student str : arraylist) {
 			System.out.println(str);
