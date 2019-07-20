@@ -1,4 +1,4 @@
-package collections.list;
+package collections.list.arrayList;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -61,6 +61,10 @@ public class _1_ArrayList {
 		// displaying elements
 		System.out.println(alist);
 
+		// *************************************************
+		// ********** ITERATING THROUGH ARRAYLIST **********
+		// *************************************************
+
 		/* For Loop for iterating ArrayList */
 		System.out.println("For Loop");
 		for (int counter = 0; counter < alist.size(); counter++) {
@@ -84,13 +88,47 @@ public class _1_ArrayList {
 		while (itr.hasNext()) {
 			System.out.println(itr.next());
 		}
-		
 
 		// iterate arraylist elements using Enumeration interface
 		Enumeration<String> e = Collections.enumeration(alist);
-		while(e.hasMoreElements()) {
+		while (e.hasMoreElements()) {
 			System.out.println(e.nextElement());
 		}
+
+		// *************************************************
+		// ********** SORTING AN ARRAYLIST **********
+		// *************************************************
+
+		/* Unsorted List */
+		System.out.println("Before Sorting:");
+		for (String counter : alist) {
+			System.out.println(counter);
+		}
+
+		/* Sort statement */
+		Collections.sort(alist); // ==========>>>>>>>>>>>>>>
+
+		/* Sorted List */
+		System.out.println("After Sorting:");
+		for (String counter : alist) {
+			System.out.println(counter);
+		}
+
+		/* Sorting in decreasing order */
+		Collections.sort(alist, Collections.reverseOrder()); // ==========>>>>>>>>>>>>>>
+
+		/* Sorted List in reverse order */
+		System.out.println("ArrayList in descending order:");
+		for (String str : alist) {
+			System.out.println(str);
+		}
+
+		/*
+		 * the reverse order sorting can also be done as following – This way the list
+		 * will be sorted in ascending order first and then it will be reversed.
+		 */
+		Collections.sort(alist);// ==========>>>>>>>>>>>>>>
+		Collections.reverse(alist);// ==========>>>>>>>>>>>>>>
 
 
 	}
