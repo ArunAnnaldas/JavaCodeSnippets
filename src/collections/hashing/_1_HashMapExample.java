@@ -5,6 +5,11 @@ import java.util.HashMap;
 public class _1_HashMapExample {
 
 	/**
+	 * Earlier it was used to initialized by default size of 16, but now (Since JDK
+	 * 7 update 40) its initialized by empty table.
+	 * 
+	 * Since Java 8, The default initial capacity - MUST be a power of two.
+	 * 
 	 * HashMap does not maintain any order neither based on key nor on basis of
 	 * value, If we want the keys to be maintained in a sorted order, we need to use
 	 * TreeMap. Complexity: get/put/containsKey() operations are O(1) in average
@@ -42,8 +47,8 @@ public class _1_HashMapExample {
 	 * binary tree is used instead of linked list to lift the worst case performance
 	 * from O(n) to O(logN).
 	 * 
-	 * if we need to retrieve value object in collision situation, following steps will
-	 * be followed :
+	 * if we need to retrieve value object in collision situation, following steps
+	 * will be followed :
 	 * 
 	 * 1) Call hashCode() method of the key to finding bucket location.
 	 * 
@@ -51,8 +56,15 @@ public class _1_HashMapExample {
 	 * keys.equals() until it returns true.
 	 * 
 	 * So, we use equals() method of a key object to find correct entry and then
-	 * return value from that. Remember key.equals() method, and this is what
-	 * Interviewer want to know
+	 * return value from that. Remember key.equals() method.
+	 * 
+	 * Since a poor hash function e.g. which always return location of same bucket,
+	 * can turn a HashMap into linked list, i.e. converting get() method to perform
+	 * in O(n) instead of O(1) and someone can take advantage of this fact, Java now
+	 * internally replace linked list to a binary true once certain threshold is
+	 * breached. This ensures performance or order O(log(n)) even in the worst case
+	 * where a hash function is not distributing keys properly.
+	 *
 	 * 
 	 * @param arr
 	 */
