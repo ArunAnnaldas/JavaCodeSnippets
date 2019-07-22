@@ -6,6 +6,7 @@ import java.io.ObjectInputStream;
 import java.util.ArrayList;
 
 public class _7_DeSerializationClass {
+	@SuppressWarnings("rawtypes")
 	public static void main(String[] args) {
 		ArrayList<String> arraylist = new ArrayList<String>();
 		try {

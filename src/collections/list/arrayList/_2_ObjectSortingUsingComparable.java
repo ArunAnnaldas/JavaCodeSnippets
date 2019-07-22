@@ -15,6 +15,7 @@ import java.util.Collections;
  *
  */
 
+@SuppressWarnings("rawtypes")
 class Student implements Comparable {
 
 	private String studentname;
