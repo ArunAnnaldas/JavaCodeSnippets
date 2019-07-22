@@ -3,11 +3,18 @@ package collections.queue;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class LinkedListExample {
+public class _1_LinkedListExample {
 
 	public static void main(String[] args) {
 
 		/*
+		 * Unbounded Queues are queues which are NOT bounded by capacity that means we
+		 * should not provide the size of the queue. For example LinkedList
+		 * 
+		 * All Queues which are available in java.util package are Unbounded Queues and
+		 * Queues which are available in java.util.concurrent package are Bounded
+		 * Queues.
+		 * 
 		 * We cannot create instance of a Queue as it is an interface, we can create
 		 * instance of LinkedList or PriorityQueue and assign it to Queue
 		 * 
@@ -61,12 +68,12 @@ public class LinkedListExample {
 	}
 
 	/*
-	 * Methods of Queue interface 
+	 * Methods of Queue interface
 	 * 
-	 * boolean add(E e): This method adds the specified
-	 * element at the end of Queue. Returns true if the the element is added
-	 * successfully or false if the element is not added that basically happens when
-	 * the Queue is at its max capacity and cannot take any more elements.
+	 * boolean add(E e): This method adds the specified element at the end of Queue.
+	 * Returns true if the the element is added successfully or false if the element
+	 * is not added that basically happens when the Queue is at its max capacity and
+	 * cannot take any more elements.
 	 * 
 	 * E element(): This method returns the head (the first element) of the Queue.
 	 * 
