@@ -1,4 +1,4 @@
-package collections.hashing;
+package collections.list;
 
 import java.util.Iterator;
 import java.util.concurrent.CopyOnWriteArrayList;
