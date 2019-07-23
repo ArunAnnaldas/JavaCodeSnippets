@@ -2,7 +2,7 @@ package collections.hashing;
 
 import java.util.Hashtable;
 
-public class _2_HashTableExample {
+public class _2_HashTableExample_1_1 {
 
 	/**
 	 * Implement Hashing using HashTable (A synchronized implementation of hashing)
