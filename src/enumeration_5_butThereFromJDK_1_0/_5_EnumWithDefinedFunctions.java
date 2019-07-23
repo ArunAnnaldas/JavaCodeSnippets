@@ -1,4 +1,4 @@
-package enumeration_5;
+package enumeration_5_butThereFromJDK_1_0;
 
 /**
  * We should define methods as abstract methods and then we have to implement

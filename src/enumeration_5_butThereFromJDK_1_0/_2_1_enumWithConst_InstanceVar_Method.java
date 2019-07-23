@@ -1,4 +1,4 @@
-package enumeration_5;
+package enumeration_5_butThereFromJDK_1_0;
 
 /**
  * In this example as soon as we declare an enum variable(Student S), the

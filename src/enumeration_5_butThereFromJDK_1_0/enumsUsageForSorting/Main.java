@@ -1,4 +1,4 @@
-package enumeration_5.enumsUsageForSorting;
+package enumeration_5_butThereFromJDK_1_0.enumsUsageForSorting;
 
 import java.util.ArrayList;
 import java.util.Collections;

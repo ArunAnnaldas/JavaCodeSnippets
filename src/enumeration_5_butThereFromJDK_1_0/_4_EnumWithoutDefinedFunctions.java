@@ -1,4 +1,4 @@
-package enumeration_5;
+package enumeration_5_butThereFromJDK_1_0;
 
 enum Operator {
 	ADD, SUBTRACT, MULTIPLY, DIVIDE;

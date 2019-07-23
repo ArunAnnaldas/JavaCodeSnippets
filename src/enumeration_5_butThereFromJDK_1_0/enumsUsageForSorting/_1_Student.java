@@ -1,4 +1,4 @@
-package enumeration_5.enumsUsageForSorting;
+package enumeration_5_butThereFromJDK_1_0.enumsUsageForSorting;
 
 public class _1_Student {
 	private int rollno;
