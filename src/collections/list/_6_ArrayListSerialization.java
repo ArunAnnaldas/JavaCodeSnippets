@@ -1,4 +1,4 @@
-package collections.list.arrayList;
+package collections.list;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
