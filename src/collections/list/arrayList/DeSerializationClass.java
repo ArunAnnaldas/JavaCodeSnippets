@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.util.ArrayList;
 
-public class _7_DeSerializationClass {
+public class DeSerializationClass {
 	@SuppressWarnings("rawtypes")
 	public static void main(String[] args) {
 		ArrayList<String> arraylist = new ArrayList<String>();

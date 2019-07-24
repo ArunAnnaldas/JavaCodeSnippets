@@ -3,7 +3,7 @@ package collections.list;
 import java.util.Iterator;
 import java.util.concurrent.CopyOnWriteArrayList;
 
-public class _9_CopyOnWriteArrayList {
+public class CopyOnWriteArrayListExample extends Thread{
 	/**
 	 * As the name indicates, CopyOnWriteArrayList creates a Cloned copy of
 	 * underlying ArrayList, for every update operation at certain point both will
@@ -35,7 +35,7 @@ public class _9_CopyOnWriteArrayList {
 		// We create a child thread
 		// that is going to modify
 		// ArrayList l.
-		_9_CopyOnWriteArrayList t = new _9_CopyOnWriteArrayList();
+		CopyOnWriteArrayListExample t = new CopyOnWriteArrayListExample();
 		t.run();
 
 		Thread.sleep(1000);

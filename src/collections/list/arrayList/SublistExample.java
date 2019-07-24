@@ -12,7 +12,7 @@ import java.util.List;
  * @author aannaldas
  *
  */
-public class _5_SublistExample {
+public class SublistExample {
 
 	public static void main(String a[]) {
 		ArrayList<String> al = new ArrayList<String>();

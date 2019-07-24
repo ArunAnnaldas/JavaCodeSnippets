@@ -2,7 +2,7 @@ package collections.list.arrayList;
 
 import java.util.ArrayList;
 
-public class _4_RemoveExample {
+public class RemoveExample {
    public static void main(String args[]) {
        //String ArrayList
        ArrayList<String> al = new ArrayList<String>();

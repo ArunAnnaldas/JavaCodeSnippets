@@ -65,7 +65,7 @@ class Student implements Comparable {
 	}
 }
 
-public class _2_ObjectSortingUsingComparable {
+public class ObjectSortingUsingComparable {
 	public static void main(String args[]) {
 		ArrayList<Student> arraylist = new ArrayList<Student>();
 		arraylist.add(new Student(223, "Chaitanya", 26));

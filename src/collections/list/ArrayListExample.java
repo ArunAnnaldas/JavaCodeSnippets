@@ -1,12 +1,11 @@
 package collections.list;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.Enumeration;
 import java.util.Iterator;
 
-public class _1_ArrayList {
+public class ArrayListExample {
 
 	/**
 	 * ArrayList is a resizable-array implementation of the List interface
@@ -37,7 +36,7 @@ public class _1_ArrayList {
 
 	private static void initUsingArrays_normal() {
 
-		ArrayList<String> alist = new ArrayList<String>();
+		ArrayListExample<String> alist = new ArrayListExample<String>();
 		alist.add("Steve");
 		alist.add("Tim");
 		alist.add("Lucy");
@@ -134,14 +133,14 @@ public class _1_ArrayList {
 	}
 
 	private static void initUsingArrays_collections_ncopies() {
-		ArrayList<String> alist = new ArrayList<String>(Collections.nCopies(15, "Arun"));
+		ArrayListExample<String> alist = new ArrayListExample<String>(Collections.nCopies(15, "Arun"));
 
 		System.out.println(alist);
 
 	}
 
 	private static void initUsingArrays_anonymousInnerClass() {
-		ArrayList<String> alist = new ArrayList<String>() {
+		ArrayListExample<String> alist = new ArrayListExample<String>() {
 			{
 				add("Mumbai");
 				add("Delhi");
@@ -154,11 +153,11 @@ public class _1_ArrayList {
 	}
 
 	private static void initUsingArrays_asList() {
-		ArrayList<String> alist = new ArrayList<String>(Arrays.asList("Jiggy", "Mirchi", "Mime"));
+		ArrayListExample<String> alist = new ArrayListExample<String>(Arrays.asList("Jiggy", "Mirchi", "Mime"));
 
 		System.out.println("Elements are " + alist);
 
-		ArrayList<String> alist1 = new ArrayList<String>();
+		ArrayListExample<String> alist1 = new ArrayListExample<String>();
 
 	}
 

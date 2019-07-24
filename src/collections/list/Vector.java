@@ -1,9 +1,6 @@
 package collections.list;
 
-import java.util.Stack;
-import java.util.Vector;
-
-public class _1_1_Vector {
+public class Vector {
 
 	/**
 	 * ===========================================================================
