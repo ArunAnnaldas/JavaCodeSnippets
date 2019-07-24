@@ -1,4 +1,4 @@
-package collections.hashing;
+package map.sortedMap.navigableMap;
 
 import java.util.Map;
 import java.util.TreeMap;

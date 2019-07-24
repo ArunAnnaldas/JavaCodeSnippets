@@ -1,5 +1,8 @@
 package collections.list;
 
+import java.util.Stack;
+import java.util.Vector;
+
 public class _1_1_Vector {
 
 	/**
@@ -30,5 +33,10 @@ public class _1_1_Vector {
 	 * and become part of Collection Framework.
 	 * 
 	 */
+
+	public static void main(String[] args) {
+
+		
+	}
 
 }
