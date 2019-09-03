@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 
-public class ArrayListSerialization {
+public class _5_ArrayListSerialization {
 	public static void main(String[] args) {
 		ArrayList<String> al = new ArrayList<String>();
 		al.add("Hello");

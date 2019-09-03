@@ -2,7 +2,15 @@ package collections.list.arrayList;
 
 import java.util.ArrayList;
 
-public class EnsureCapacityExample {
+public class _7_EnsureCapacityExample {
+
+	/*
+	 * 
+	 * The ensureCapacity() method of java.util.ArrayList class increases the
+	 * capacity of this ArrayList instance, if necessary, to ensure that it can hold
+	 * at least the number of elements specified by the minimum capacity argument.
+	 * 
+	 */
 	public static void main(String args[]) {
 		// ArrayList with Capacity 4
 		ArrayList<String> al = new ArrayList<String>(4);

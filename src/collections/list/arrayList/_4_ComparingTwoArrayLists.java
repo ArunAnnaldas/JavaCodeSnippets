@@ -2,7 +2,7 @@ package collections.list.arrayList;
 
 import java.util.ArrayList;
 
-public class ComparingTwoArrayLists {
+public class _4_ComparingTwoArrayLists {
 	public static void main(String[] args) {
 		ArrayList<String> al1 = new ArrayList<String>();
 		al1.add("hi");
