@@ -1,4 +1,4 @@
-package collections.list;
+package collections.list.arrayList;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -14,7 +14,8 @@ public class ArrayListExample {
 	 * ArrayList can dynamically grow and shrink after addition and removal of
 	 * elements
 	 * 
-	 * 
+	 * If 2 different threads perform operations on same ArrayList object
+	 * simultaneously, then compiler will throw ConcurrentModificationException
 	 * 
 	 */
 
@@ -43,7 +44,7 @@ public class ArrayListExample {
 		alist.add("Lucy");
 		alist.add("Pat");
 		alist.add("Angela");
-		alist.add("Tom");
+		alist.add("Steve");
 
 		// displaying elements
 		System.out.println(alist);
@@ -130,7 +131,6 @@ public class ArrayListExample {
 		Collections.sort(alist);// ==========>>>>>>>>>>>>>>
 		Collections.reverse(alist);// ==========>>>>>>>>>>>>>>
 
-
 	}
 
 	private static void initUsingArrays_collections_ncopies() {
@@ -161,5 +161,5 @@ public class ArrayListExample {
 		ArrayList<String> alist1 = new ArrayList<String>();
 
 	}
-
+	
 }

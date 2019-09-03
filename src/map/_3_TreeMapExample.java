@@ -1,4 +1,4 @@
-package map.sortedMap.navigableMap;
+package map;
 
 import java.util.Map;
 import java.util.TreeMap;
