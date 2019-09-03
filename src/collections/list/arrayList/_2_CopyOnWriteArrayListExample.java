@@ -3,7 +3,7 @@ package collections.list.arrayList;
 import java.util.ArrayList;
 import java.util.concurrent.CopyOnWriteArrayList;
 
-class CopyOnWriteArrayListExample extends Thread {
+class _2_CopyOnWriteArrayListExample extends Thread {
 	/**
 	 * 
 	 * CopyOnWriteArrayList: CopyOnWriteArrayList class is introduced in JDK 1.5,
@@ -61,7 +61,7 @@ class CopyOnWriteArrayListExample extends Thread {
 		alStars.add("Little Star");
 
 		// creating another thread
-		Thread newThread = new Thread(new CopyOnWriteArrayListExample());
+		Thread newThread = new Thread(new _2_CopyOnWriteArrayListExample());
 		newThread.start();
 
 		// iterating ArrayList using enhanced for-loop
