@@ -2,7 +2,7 @@ package collections.list.arrayList;
 
 import java.util.concurrent.CopyOnWriteArrayList;
 
-public class test implements Runnable{
+public class _3_CodingPracticeArrayList implements Runnable{
 	
 	static CopyOnWriteArrayList<String> al = new CopyOnWriteArrayList<String>();
 	
@@ -30,7 +30,7 @@ public class test implements Runnable{
 		al.add("Arun5");
 		al.add("Arun6");
 		
-		Thread t = new Thread(new test());
+		Thread t = new Thread(new _3_CodingPracticeArrayList());
 		t.start();
 		
 		for(String s : al) {
